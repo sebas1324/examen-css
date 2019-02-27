@@ -1,0 +1,15 @@
+body{
+font-family: Dancing Script;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+h1{
+  text-align: left;
+  color: white;
+  text-shadow: 2px color: #02010a;
+}
+#menu{
+  text-align: right;
+}
