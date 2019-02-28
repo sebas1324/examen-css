@@ -1,5 +1,7 @@
 body{
 font-family: Dancing Script;
+background-color: #02010a;
+font-size: 100%;
 }
 header{
   background-color: #5b7989;
@@ -8,8 +10,37 @@ header{
 h1{
   text-align: left;
   color: white;
-  text-shadow: 2px color: #02010a;
+  text-shadow: 2px color:#02010a;
 }
 #menu{
   text-align: right;
+}
+
+div [class*="bloque"]{
+  min-height: 100px;
+  flex: 2 3 40%;
+}
+.bloque1{
+  background-color: #82c3a6;
+  order: 1;
+  box-shadow: 2px color:#02010a;
+}
+.bloque2{
+  background-color: #d5c75f;
+  border: 1px;
+  box-shadow: 2px color:#02010a;
+  order: 2;
+  width: 40%;
+}
+.bloque3{
+  background-color: #d5c75f;
+  border: 1px;
+  box-shadow: 2px color:#02010a;
+  order: 2;
+  width: 40%;
+}
+section{
+  display: flex;
+  width: 100%;
+  height: 700px%;
 }
