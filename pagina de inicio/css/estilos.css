@@ -3,6 +3,7 @@ font-family: Dancing Script;
 background-color: #02010a;
 font-size: 100%;
 margin: 0 auto;
+text-decoration: none;
 }
 .contenido{
   margin-left: auto;
@@ -12,7 +13,15 @@ margin: 0 auto;
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
+  animation: slidein 2s;
+  position: relative;
 }
+@-webkit-keyframes slidein{
+  0%{margin-top: 150%;}
+  60%{margin-top: -5%;}
+  100{margin-top: 0%;}
+}
+
 h1{
   text-align: left ;
   color: white;
@@ -28,14 +37,14 @@ h1{
 .bloque2{
   background-color: #d5c75f;
   float: left;
-  height: 450px;
-  width: 900px;
+  height: 50%;
+  width: 100%;
 }
 .bloque3{
   background-color: #d5c75f;
   float: right;
-  height: 450px;
-  width: 900px;
+  height: 50%;
+  width: 100%;
 
 }
 section{
@@ -64,18 +73,22 @@ img{
   box-shadow: #82c3a6;
   border: 2px;
 }
+
 #imagen1{
   margin-top: 0px;
   margin-bottom: 0px;
+  width: 80%;
+  height: 500px;
 }
 img{
   transform: scale(1.05,0.93);
 }
+
 #imagen2{
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 40px;
-  width: 350px;
+  margin-left: 10%;
+  width: 80%;
   height: 400px;
   display: flex;
 }
@@ -83,8 +96,8 @@ img{
 #imagen3{
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-left: 40px;
-  width: 360px;
+  margin-left: 10%;
+  width: 80%;
   height: 400px;
   display: flex;
 }
@@ -102,22 +115,26 @@ footer img{
   min-height: 200px;
   width: 35%;
   font-size: 1.2em;
+  color: black;
 }
 #terminos{
   min-height: 200px;
   width: 37%;
   padding-left: 1em;
   font-size: 1.1em;
+  color: black;
 }
 #redes{
   min-height: 200px;
   width: 30%;
   font-size: 1.1em;
+  color: black;
 }
 #derechos{
   min-height: 200px;
   width: 25%;
   font-size: 1.3em;
+  color: black;
 }
 #facebook{
   width: 25px;
@@ -127,21 +144,30 @@ footer img{
   width: 25px;
   height: 25px;
 }
+#twitter{
+  width: 25px;
+  height: 25px;
+}
 @media all and (max-width: 900px) and (min-width:480px) {
   header{
     width: 100%;
+    order: 1;
   }
   .bloque1{
     width: 100%;
+    order: 2;
   }
   .bloque2{
     width: 50%;
+    order: 3;
   }
   .bloque3{
     width: 50%;
+    order: 4;
   }
   footer{
     width: 900px;
+    order: 5;
   }
 }
 @media all and (max-width: 480px) {
