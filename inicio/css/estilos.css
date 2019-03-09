@@ -1,20 +1,21 @@
-body{
+html,body{
 font-family: Dancing Script;
 background-color: #02010a;
 font-size: 100%;
 margin: 0 auto;
 text-decoration: none;
+text-align: center;
+color: white;
 }
 .contenido{
   margin-left: auto;
   margin-right: auto;
   width: 900px;
-  flex-direction: column;
 }
 header{
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
-  animation: slidein 1s;
+  animation: slidein 3s;
   position: relative;
 }
 @-webkit-keyframes slidein{
@@ -39,16 +40,15 @@ h1{
   background-color: #d5c75f;
   height: 50%;
   width: 100%;
-  flex-direction: column;
 }
 .bloque3{
   background-color: #d5c75f;
   height: 50%;
   width: 100%;
-  flex-direction: column;
 }
 section{
   display: flex;
+  flex-flow: row;
 }
 img{
   border: 1px solid black;
@@ -143,6 +143,9 @@ footer img{
   height: 25px;
 }
 @media only screen and (max-width: 900px) and (min-width:480px) {
+  section{
+    flex-direction: row;
+  }
   header{
     width: 100%;
     order: 1;
@@ -164,7 +167,10 @@ footer img{
     order: 5;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
+  section{
+    flex-direction: column;
+  }
   header{
     width: 100%;
     max-width: 480px;
@@ -199,6 +205,6 @@ footer img{
     order: 5;
     display: flex;
     flex-direction: column;
-    padding-left: 10vh;
+    padding-left: 8.6vh;
   }
 }

@@ -1,0 +1,127 @@
+html,body{
+  margin:0;
+  padding:0;
+  background-color: black;
+  font-family:'Dancing Script';
+  color: white;
+  text-align: center;
+}
+.contenedor{
+  width: 900px;
+  margin:auto;
+  border-radius: 25px;
+  animation: slideIn 3s;
+}
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: row;
+}
+header a,header a:visited,header a:link{
+  color: white;
+}
+.titulo,.menu{
+  margin: auto;
+}
+.titulo{
+  margin-right: 15vw;
+}
+.menu{
+  margin-left: 15vw;
+}
+.seleccion{
+  text-decoration: none;
+}
+.paisaje{
+  width: 25%;
+  height: 20%;
+}
+section{
+  background-color: #82c3a6;
+}
+.primero,.segundo{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.primero{
+  padding: 50px 0 0 0;
+}
+.segundo{
+  padding: 50px 0 50px 0;
+}
+img{
+  margin: auto;
+}
+.blur{
+  filter: blur(10px);
+}
+.gris{
+  filter: grayscale(100%);
+}
+.sepia{
+  filter: sepia(90%);
+}
+
+div[class*="columna"]{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: black;
+}
+footer{
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+@media (max-width:600px) {
+  .contenedor{
+    width: 100%;
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu{
+    padding-bottom: 20px;
+  }
+  .paisaje{
+    width: 75%;
+    height: 80%;
+  }
+  .primero,.segundo{
+    flex-direction: column;
+  }
+  .primero img{
+    padding: 50px 0 0 0;
+  }
+  .segundo img{
+    padding: 0 0 50px 0;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  div[class*="columna"]{
+    padding-left: 0;
+    padding-bottom: 5%;
+  }
+}
+
+@keyframes slideIn {
+  0%{
+    margin-top:150%;
+  }
+  60%{
+    margin-top:-5%;
+  }
+  100%{
+    margin-top:0%;
+  }
+}
